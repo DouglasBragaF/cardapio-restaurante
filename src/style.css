@@ -113,6 +113,9 @@ h1, h2, h3, h4, h5, p {
   padding-bottom: 0.5%;
   text-align: center;
 }
+.card{
+  background-color: #ffffff33;
+}   
 .card-title {
   font-size: 1.25rem;
   font-weight: bold;
@@ -141,6 +144,7 @@ h1, h2, h3, h4, h5, p {
 }
 #valor{
   color: green;
+  font-weight: bold;
 }
 
 .titulo_e_preco{
@@ -182,3 +186,4 @@ h1, h2, h3, h4, h5, p {
 .redes-sociais ul li {
   margin-left: 10px; /* Adicione espaço entre os ícones */
 }
+
