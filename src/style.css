@@ -83,6 +83,7 @@ body::before {
 .cardapio-section {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: fit-content;
   height:max-content;
@@ -90,18 +91,37 @@ body::before {
   box-sizing: border-box;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .menu-selecionado {
   font-size:large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  flex-grow: 1;
 }
 
-
-
-.card-img {
-  border-radius: 10px;
-  width: 100%;
-  height: auto;
+.estrelas {
+  direction: rtl;
+  unicode-bidi: bidi-override;
 }
+.estrelas span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.estrelas span::before {
+  content: "\2605";
+  position: absolute;
+}
+.estrelas span:hover::before,
+.estrelas span:hover ~ span::before {
+  color: gold;
+}
+
 
 
 h1, h2, h3, h4, h5, p {
